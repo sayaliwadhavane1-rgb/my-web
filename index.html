@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Two-Profile Message App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Two Profile Message App (Demo)</h1>
+
+    <section id="login-section" class="card">
+      <h2>Login to Profile</h2>
+      <div class="control-group">
+        <label for="profile-select">Choose Profile</label>
+        <select id="profile-select" aria-label="Profile"> </select>
+      </div>
+
+      <div class="control-group">
+        <label for="profile-password">Password</label>
+        <input type="password" id="profile-password" placeholder="Enter password" />
+      </div>
+
+      <button id="login-btn">Unlock</button>
+      <p id="login-status" class="status"></p>
+    </section>
+
+    <section id="message-section" class="card hidden">
+      <h2 id="profile-title"></h2>
+      <p id="profile-meta"></p>
+
+      <div class="control-group">
+        <label for="message-input">New Message</label>
+        <textarea id="message-input" rows="3" placeholder="Write your message..."></textarea>
+      </div>
+
+      <button id="send-btn">Send Message</button>
+      <button id="logout-btn" class="secondary">Logout</button>
+
+      <h3>Messages</h3>
+      <ul id="message-list" class="message-list"></ul>
+    </section>
+
+    <section class="card info">
+      <p>Note: This app uses placeholder IDs and passwords for learning/test purposes only. No real personal data is collected.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
